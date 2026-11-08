@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--suppress JSUnresolvedLibraryURL -->
+<html lang="nl">
+<head>
+    <title>Hello Spring Boot Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.2.0/bundles/stomp.umd.min.js"></script>
+    <script src="/main.js"></script>
+</head>
+<body>
+    <h1>Spring Boot Tutorial</h1>
+    <label for="sessionId">SessionId: </label><input type="text" id="sessionId" placeholder="Send to SessionId here..." size="50" onfocus=this.value='' /><br/><br/>
+    <input id="connect" type="button" onclick="connect()" value="Connect" />
+    <input id="disconnect" type="button" onclick="disconnect()" value="Disconnect" /><br/><br/>
+    <input id="sendMessage" type="button" onclick="sendMessage()" value="Send Messages" />
+    <input id="sendPrivateMessage" type="button" onclick="sendPrivateMessage()" value="Send Private Messages" />
+    <input id="clearMessages" type="button" onclick="clearMessage(messages)" value="Clear Messages" />
+    <p><span  id="connection"></span></p>
+    <p>Messages:<br/> <span  id="messages"></span></p>
+</body>
+</html>
